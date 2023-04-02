@@ -16,6 +16,10 @@ Including another URLconf
 
 from django.urls import path
 
+
+from calculator.views import recipies
+
 urlpatterns = [
+    path('<item>/', recipies),
     # здесь зарегистрируйте вашу view-функцию
 ]
